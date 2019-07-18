@@ -8,20 +8,20 @@ pip install pecan
 pecan create web_server_pecan
 alias tree="find web_server_pecan/ -print | sed -e 's;[^/]*/;|____;g;s;____|;|;g'"
 tree web_server_pecan
-|____
-||____config.py
-||____MANIFEST.in
-||____public
-|||____css
-||||____style.css
-|||____images
-||||____logo.png
-||____setup.cfg
-||____setup.py
-||____web_server_pecan
-|||______init__.py
-|||______init__.pyc
-|||____app.py
+|____       
+||____config.py         
+||____MANIFEST.in       
+||____public        
+|||____css          
+||||____style.css         
+|||____images       
+||||____logo.png        
+||____setup.cfg       
+||____setup.py        
+||____web_server_pecan        
+|||______init__.py        
+|||______init__.pyc       
+|||____app.py       
 |||____controllers
 ||||______init__.py
 ||||______init__.pyc
