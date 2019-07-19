@@ -41,6 +41,24 @@ tree web_server_pecan
 ||||____test_units.py
 ||||____test_units.pyc
 
+# running the application
+
+python setup.py develop
+pecan serve config.py
+```
+Starting server in PID 80615
+serving on 0.0.0.0:8080, view at http://127.0.0.1:8080
+2019-07-19 15:18:08,490 [INFO    ] [pecan.commands.serve][MainThread] "GET / HTTP/1.1" 200 989
+2019-07-19 15:21:03,692 [INFO    ] [pecan.commands.serve][MainThread] "GET / HTTP/1.1" 200 989
+2019-07-19 15:21:03,838 [INFO    ] [pecan.commands.serve][MainThread] "GET /css/style.css HTTP/1.1" 200 569
+2019-07-19 15:21:03,862 [WARNING ] [pecan.commands.serve][MainThread] "GET /javascript/shared.js HTTP/1.1" 404 407
+2019-07-19 15:21:03,885 [INFO    ] [pecan.commands.serve][MainThread] "GET /images/logo.png HTTP/1.1" 200 20596
+2019-07-19 15:21:04,398 [WARNING ] [pecan.commands.serve][MainThread] "GET /favicon.ico HTTP/1.1" 404 407
+```
+
+# running the Tests for the application
+python setup.py test -q
+
 # tips
 
 ## WSME
