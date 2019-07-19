@@ -20,5 +20,17 @@ class BookController(RestController):
         return "Get all books , user_id : {}, book_list.".format(self.user_id)
 
     @expose()
+    def get_one(self, book_id):
+        return "Get one book, book_id: {}".format(book_id)
+
+    @expose()
+    def put(self, body):
+        return "Put new book, body: {}.".format(str(body))
+
+    @expose()
+    def delete(self, book_id):
+        return "Delete a book, book_id: {}".format(book_id)
+
+    @expose()
     def post(self):
         return "Create a book , user_id : {}.".format(self.user_id)
